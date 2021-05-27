@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "144259528020",
+    "project_id": "kdtech-bafee",
+    "storage_bucket": "kdtech-bafee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144259528020:android:ec0720d7afbdcdbd2344c1",
+        "android_client_info": {
+          "package_name": "com.androidapp.kdtechs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144259528020-tubgkoofimdhchgoio60oci4do9322bp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidapp.kdtechs",
+            "certificate_hash": "feaba2a2452eadc4d16c064fb0b13f285878e8ff"
+          }
+        },
+        {
+          "client_id": "144259528020-ofprinoqaja9to6lvq2k9rfj9vhhq2nv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLdTKf4WDFQ85GkGHH5vMqFdFN7czqEQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144259528020-ofprinoqaja9to6lvq2k9rfj9vhhq2nv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
