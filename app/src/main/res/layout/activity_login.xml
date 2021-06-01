@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="Enter email..."/>
+        android:hint="Enter password..."/>
 
     <Button
         android:id="@+id/submit"
@@ -29,5 +29,21 @@
         android:text="Submit"
         android:background="@color/colorPrimary"
         android:textColor="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"
+            android:id="@+id/phone_auth"
+            android:tint="@android:color/white"/>
+    </LinearLayout>
+
+
 
 </LinearLayout>

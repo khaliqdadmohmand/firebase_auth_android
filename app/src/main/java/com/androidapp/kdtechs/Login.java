@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -22,7 +23,8 @@ public class Login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     Button submit;
     EditText email, pass;
-String TAG = "KDTECHS";
+    FloatingActionButton phoneAuth;
+    String TAG = "KDTECHS";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,8 @@ String TAG = "KDTECHS";
         submit = findViewById(R.id.submit);
         email = findViewById(R.id.email);
         pass = findViewById(R.id.password);
+        phoneAuth = findViewById(R.id.phone_auth);
+
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -48,6 +52,16 @@ String TAG = "KDTECHS";
                 }
             }
         });
+
+        phoneAuth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(Login.this, PhoneAuthentication.class);
+                startActivity(in);
+            }
+        });
+
+
     }
 
     private void login(String email, String password) {
@@ -71,5 +85,8 @@ String TAG = "KDTECHS";
                 });
 
     }
+
+
+
 }
 

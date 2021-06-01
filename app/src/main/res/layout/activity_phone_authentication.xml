@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneAuthentication">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your phone"
+        android:id="@+id/idEdtPhoneNumber"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:importantForAutofill="no" />
+
+    <!--Button for getting OTP-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get OTP"
+        android:layout_below="@id/idEdtPhoneNumber"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:id="@+id/idBtnGetOtp"
+        />
+
+
+    <!--Edittext for getting otp from user-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnGetOtp"
+        android:hint="Enter OTP"
+        android:inputType="phone"
+        android:id="@+id/idEdtOtp"
+        android:layout_margin="10dp"
+        android:importantForAutofill="no" />
+
+
+    <!--button for verifying user OTP-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:layout_below="@id/idEdtOtp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:id="@+id/idBtnVerify"
+        />
+
+
+
+</RelativeLayout>
